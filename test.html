@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quiz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="beautiful.css">
+</head>
+<div class="nav">
+        <ul class="main-nav ">
+        <li> <a href="Favorites.html">Home</a></li>
+        <li> <a href="recipes.html">Recipes</a></li>
+        <li> <a href="Form.html">Form</a></li>
+
+    </ul>
+</div>
+<body>
+
+<div class="container">
+
+    <h1>Testing your food knowledge</h1>
+    <!--&copy https://www.w3schools.com/bootstrap4/bootstrap_forms.asp -->
+    <form id="test" name="test">
+
+        <p>1. What city in the world made the largest Pizza?</p>
+        <input type="radio" name="question1" value="Paris">Paris<br>
+        <input type="radio" name="question1" value="Rome">Rome<br>
+        <img src="https://www.worldrecordacademy.com/food/img/113161-2_largest_pizza_Rome.jpg"><br>
+
+        <p>2. What country originated Pho?</p>
+        <input type="radio" name="question2" value="Korea">Korea<br>
+        <input type="radio" name="question2" value="Vietnam">Vietnam <br>
+        <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2019/8/29/0/FN_Ready-jet-cook-rjc105-quick-beef-pho_6x4.jpg.rend.hgtvcom.826.620.suffix/1567085928842.jpeg"><br>
+
+        <p>3. What country is known for BigMac?</p>
+        <input type="radio" name="question3" value="Germany">Germany<br>
+        <input type="radio" name="question3" value="US">US <br>
+        <img src="https://www.mcdonalds.com/content/dam/usa/nfl/nutrition/items/regular/desktop/t-mcdonalds-Big-Mac.jpg"><br>
+
+        <h2> <input id= "button" type="button" value = "Submit answer" onclick="check()"> <br></h2>
+
+    </form>
+
+<div id = "answers">
+    <h2 id ="messages"></h2>
+    <h2 id="Correct"></h2>
+    <img id="pictures">
+</div>
+
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="emi.js"></script>
+
+</html>
+
