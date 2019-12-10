@@ -24,6 +24,7 @@ const recipesData = [
         "photo": "images/crab-rangoons.jpg",
     }
 ];
+//https://css-tricks.com/template-literals/ for loading data to recipes//
 document.getElementById("recipes").innerHTML = `
 <h2 class = "recipes-title">Number of recipes(${recipesData.length})</h2>
 ${recipesData.map(function(food){
