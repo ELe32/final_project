@@ -52,7 +52,7 @@ h2 {
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/vietnamese-food.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../images/vietnamese-food.jpg");
   background-size: contain, cover;
   height: 88vh;
 }
@@ -108,4 +108,4 @@ footer {
   width: 100%;
 }
 
-/*# sourceMappingURL=beautiful.css.map */
+/*# sourceMappingURL=style.css.map

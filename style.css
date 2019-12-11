@@ -1,32 +1,31 @@
-$font-stack:    Helvetica, sans-serif;
-$primary-color: #d2ffe8;
-$nav-color: #f927e4;
-$nav-background: #c682ff;
-h1{
+h1 {
   margin-bottom: 20px;
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
 }
-h2{
-  font-family: "Freestyle Script" ;
+
+h2 {
+  font-family: "Freestyle Script";
   font-style: italic;
   margin-bottom: 20px;
   color: #c682ff;
 }
 
-.navbar{
+.navbar {
   overflow: hidden;
   background-color: #a28d80;
   height: 70px;
   width: 100%;
   display: flex;
 }
-.navbar h2{
+
+.navbar h2 {
   font-size: 25px;
   margin-bottom: 60px;
   color: #fffb4c;
 }
-.main-nav li{
+
+.main-nav li {
   float: left;
   display: block;
   color: #000000;
@@ -35,33 +34,36 @@ h2{
   text-decoration: none;
   font-size: 25px;
 }
+
 .main-nav li:hover {
   background: #977b76;
   color: black;
 }
-.main-nav li{
+
+.main-nav li {
   display: inline-block;
   list-style: none;
   margin-left: 30px;
 }
 
-*,html,body
-{ margin: 0px;
-padding: 0px;
+*, html, body {
+  margin: 0px;
+  padding: 0px;
 }
-header{
-  background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("images/vietnamese-food.jpg");
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/vietnamese-food.jpg");
   background-size: contain, cover;
   height: 88vh;
 }
-.main-nav li a{
-  color: #ffffff;
 
+.main-nav li a {
+  color: #ffffff;
 }
 
-body  {
-  font: 100% $font-stack;
-  color: $primary-color;
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #d2ffe8;
   height: 100%;
   margin: 20px;
   font-family: Arial, Helvetica, sans-serif;
@@ -69,7 +71,7 @@ body  {
 }
 
 img {
-margin-bottom: 20px;
+  margin-bottom: 20px;
   max-width: 100%;
   width: 400px;
   height: auto;
@@ -79,25 +81,31 @@ margin-bottom: 20px;
   text-align: center;
   color: rebeccapurple;
 }
+
 #pictures {
   margin: 10px;
   width: 400px;
   height: auto;
 }
-#recipes{
+
+#recipes {
   text-align: center;
   background-color: #977b76;
   color: #97ff98;
 }
-#answers{
+
+#answers {
   position: absolute;
   top: 70%;
   margin-left: 500px;
   text-align: center;
   font-size: 25px;
 }
-footer{
+
+footer {
   position: relative;
   bottom: 0;
   width: 100%;
 }
+
+/*# sourceMappingURL=style.css.map */
