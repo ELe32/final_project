@@ -1,6 +1,6 @@
 const recipesData = [
     {
-        "Name" :"Egg-Roll",
+        "Name" :"Egg-Rolls",
         "steps":["prepare ingredients",
         " Roll ingredients in rice paper",
         " Deep fried for 5 minutes"
@@ -8,7 +8,7 @@ const recipesData = [
         "photo": "images/egg-rolls.jpg",
     },
     {
-        "Name" :"Spring-Roll",
+        "Name" :"Spring-Rolls",
         "steps":["prepare ingredients",
         " Roll ingredients in rice paper",
         " Serve with dipping sauce"
@@ -30,7 +30,6 @@ document.getElementById("recipes").innerHTML = `
 ${recipesData.map(function(food){
     return `
     <div >
-    
     <h3 > ${food.Name} </h3>
     <p > ${food.steps}</p>
     <img src="${food.photo}">
@@ -38,6 +37,7 @@ ${recipesData.map(function(food){
     `
 }).join('')}
 `
+//Javascript for test, comparing user input to correct values and return the result//
 function check(){
     const question1 = document.test.question1.value;
     const question2 = document.test.question2.value;
@@ -46,14 +46,14 @@ function check(){
     if(question1 === "Rome"){right++;}
     if(question2 === "Vietnam"){right++;}
     if(question3 === "US"){right++;}
-    let messages =["You are awesome! Fill out the form for a prize package","You did good! Fill out the form for a prize package", "Try again"];
-    let pictures =["https://media.giphy.com/media/11J8lEFfvHLipi/giphy.gif", "https://media.giphy.com/media/69u87N8y7MgEnOZXZV/giphy.gif","https://media.giphy.com/media/26ybwvTX4DTkwst6U/giphy.gif"];
-    let answer;
-    if(right<2){answer = 2;}
-    if (right===2){answer=1}
-    if (right>2){answer =0;}
-    document.getElementById("messages").innerHTML=messages[answer];
-    document.getElementById("pictures").src=pictures[answer];
+    let messages =[ "Try again","You did good! Fill out the form for a prize package","You are awesome! Fill out the form for a prize package"];
+    let pictures =["https://media.giphy.com/media/26ybwvTX4DTkwst6U/giphy.gif","https://media.giphy.com/media/69u87N8y7MgEnOZXZV/giphy.gif", "https://media.giphy.com/media/11J8lEFfvHLipi/giphy.gif"];
+    let msg_element;
+    if(right<2){msg_element = 0;}
+    if (right===2){msg_element=1}
+    if (right>2){msg_element =2;}
+    document.getElementById("messages").innerHTML=messages[msg_element];
+    document.getElementById("pictures").src=pictures[msg_element];
     document.getElementById("Correct").innerHTML = "You score " + right + " out of 3!";
 }
 
