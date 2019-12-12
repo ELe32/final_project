@@ -11,7 +11,7 @@ function css() {
     .pipe(sass())
     .pipe(autoprefixer())
     .pipe(minifyCSS())
-    .pipe(rename('style.min.css'))
+    .pipe(rename('style.min.scss'))
     .pipe(dest('build'))
 }
 
